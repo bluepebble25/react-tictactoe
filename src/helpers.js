@@ -20,3 +20,17 @@ export function calculateWinner(squares) {
   }
   return null;
 }
+
+export function checkDraw(squares) {
+  const nullArray = [];
+  squares.forEach((element) => {
+    if(element === null) {
+      nullArray.push(element);
+    }
+  });
+
+  if(nullArray.length === 0) {
+    return true;
+  }
+  return false;
+}
