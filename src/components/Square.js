@@ -1,10 +1,10 @@
-function Square(props) {
+function Square({onClick, value}) {
   return (
     <button
       className="square"
-      onClick={props.onClick}
+      onClick={onClick}
     >
-      {props.value}
+      {value}
     </button>
   );
 }
